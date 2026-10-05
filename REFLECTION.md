@@ -10,7 +10,7 @@ I compared `localStorage`, `sessionStorage`, IndexedDB, cookies, the File System
 
 ## 3. Sprint 1 technique that changed the outcome
 
-The **search → paste → cite** technique made a noticeable difference when implementing the dynamic `/leads/[id]` route. I had placed current Next.js App Router documentation with its source URL in `docs/`. Claude checked that reference before implementation and correctly handled current routing behaviour and the separation between server-side routing and client-side `localStorage`, instead of relying on potentially outdated assumptions.
+A useful example of **project memory preventing agent drift** happened in the Git workflow. Claude once created a new branch without me explicitly asking for one. I clarified the rule in `CLAUDE.md` that work should stay on `main` unless I specifically request a separate branch. Later, Claude referred back to that rule before branching. This showed me how a concise project-memory file can make the agent’s behaviour more predictable and reduce unnecessary workflow changes.
 
 ## 4. Design pass
 
