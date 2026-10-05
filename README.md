@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cold Lead Intake
+
+A small browser-based B2B sales research app for capturing and maintaining
+potential property management target companies before qualification.
+
+## Features
+
+- **Lead management:** create, view, edit and delete leads with company,
+  website, management type (WEG / rental / both), managed units, city,
+  federal state, ownership structure, source and notes.
+- **Lead detail pages:** every lead has its own direct, dynamic
+  `/leads/[id]` page.
+- **Research status:** track each lead as New, Enriched or Ready for
+  Qualification.
+- **Search and filter:** free-text search across all saved information, plus
+  managed-units filters.
+- **Home dashboard:** key figures, research progress and a "Needs attention"
+  list for incomplete, stale or modified leads.
+- **JSON export and import:** back up leads or move them between browsers;
+  leads changed since their last export are flagged.
+- **Persistence:** leads are saved in `localStorage` and survive page reloads.
+- **Responsive and friendly:** works on desktop and mobile, with clear empty
+  and not-found states.
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+Requires Node.js and npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data Storage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app is local-only: there is no backend and no user accounts. Leads are
+stored in your browser's `localStorage`, so they stay in one browser on one
+device and are lost if site data is cleared. Use the JSON export to keep a
+backup.
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+### Home Dashboard
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Cold Lead Intake Home Dashboard](docs/screenshots/home_dashboards.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Lead Management
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Cold Lead Intake Lead Management](docs/screenshots/leads.png)
