@@ -112,10 +112,10 @@ Not available:
   - Verified the final app: lint, `tsc` and `next build` pass; routes respond (200, 404 for unknown pages).
   - Created this session log and `/log-session`; renamed the session; ran `/log-session` (reported "already logged") and `/log-session update` (this revision).
 - **Key decisions:** Merge PRs with a merge commit so commits stay visible; the cited reference was created at submission time, not backdated, and the reflection was corrected to say what actually happened [fact].
-- **Files changed:** `README.md`, `REFLECTION.md`, `docs/screenshots/home_dashboards.png`, `docs/screenshots/leads.png`, `docs/nextjs-creating-a-page.md`; no application code [fact]. New and still untracked: `docs/session-log.md`, `.claude/commands/log-session.md` [fact, `git status` on 2026-10-07].
-- **Git:** commits 8793b72, 1811a4e, fba670c; merge commits b9d8c98 (PR #3), bcc9236 (PR #4). Current branch `main`.
-- **Outcome:** In progress. Submission documentation is on `main` and in sync with `origin/main`; the session log and the `/log-session` command exist locally but are not committed [fact].
-- **Follow-ups:** Commit and push `docs/session-log.md` and `.claude/commands/log-session.md` when ready. Findings 2 to 4 of the 2026-10-07 code review may still be open (see that entry).
+- **Files changed:** `README.md`, `REFLECTION.md`, `docs/screenshots/home_dashboards.png`, `docs/screenshots/leads.png`, `docs/nextjs-creating-a-page.md`; no application code [fact]. `docs/session-log.md` and `.claude/commands/log-session.md` were added and committed [fact].
+- **Git:** commits 8793b72, 1811a4e, fba670c; merge commits b9d8c98 (PR #3), bcc9236 (PR #4); 2d69bef (session log and `/log-session`, pushed directly to `main`). Current branch `main`.
+- **Outcome:** In progress. Submission documentation, the session log and the `/log-session` command are all on `main` and in sync with `origin/main` as of 2d69bef [fact]. This update itself is not yet committed.
+- **Follow-ups:** Commit and push this log update. Findings 2 to 4 of the 2026-10-07 code review may still be open (see that entry).
 
 ## 2026-10-07 - Code review findings verification
 
