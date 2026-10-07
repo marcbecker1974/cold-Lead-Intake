@@ -10,7 +10,7 @@ I compared `localStorage`, `sessionStorage`, IndexedDB, cookies, the File System
 
 ## 3. Sprint 1 technique that changed the outcome
 
-A useful example of **project memory preventing agent drift** happened in the Git workflow. Claude once created a new branch without me explicitly asking for one. I clarified the rule in `CLAUDE.md` that work should stay on `main` unless I specifically request a separate branch. Later, Claude referred back to that rule before branching. This showed me how a concise project-memory file can make the agent’s behaviour more predictable and reduce unnecessary workflow changes.
+A useful example of **project memory preventing agent drift** happened in the Git workflow. Claude once created a new branch without me explicitly asking for one. I clarified the rule in `CLAUDE.md` that work should stay on `main` unless I specifically request a separate branch. Later, Claude referred back to that rule before branching. This showed me how a concise project-memory file can make the agent’s behaviour more predictable and reduce unnecessary workflow changes. The cited Next.js source for page and routing conventions in this project is `docs/nextjs-creating-a-page.md`.
 
 ## 4. Design pass
 

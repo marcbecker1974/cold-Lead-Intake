@@ -38,6 +38,8 @@ http://localhost:3000
   `docs/github-primer-design.md`.
 - For data persistence, follow the decision in
   `docs/persistence-decision.md` (browser `localStorage`).
+- For the cited Next.js page and routing conventions used in this project,
+  refer to `docs/nextjs-creating-a-page.md`.
 
 ## Git workflow
 
